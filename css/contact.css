@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+.clearfix:before,
+	.clearfix:after {
+					    content: "";
+					    display: block;
+					    clear: both;
+					    visibility: hidden;
+					    line-height: 0;
+					    height: 0;
+					    font-size:0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+@font-face{
+    font-family: 'font1'; 
+    src: url(../images/fonts/xrxw3i6li01bkofansskzg.ttf);
+}
+
+.container{
+    width: 1170px;
+    margin:0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+ul,li{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+
+
+/* section-contact部分................... */
+
+
+.section-contact{
+    /* width: 1170px; */
+   /* height: 90px; */
+    background-image: url(../images/img/parallax-5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+.contact-title{
+    height: 90px;
+    text-align: center;
+}
+.contact-title h1{
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 5px;
+    font-family: font1;
+}
+.contact-title ul{
+    padding-left: 0;
+}
+.contact-title ul li{
+    display: inline-block;
+}
+.contact-title ul li:first-child:after{
+    content:"/";
+    margin: 0 5px;
+}
+.contact-title ul li a,.contact-title ul li:after{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    font-family: font1;
+}
+.contact-title ul li a:hover{
+    color: #18ba60;
+}
+
+/* section-partner部分................. */
+.section-partner{
+    padding: 40px 0;
+    background: #f9f9f9;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.section-partner .partner-icon{
+    padding: 80px 0;
+    text-align: center;
+}
+.partner-wrap{
+    display: inline-block;
+    background: #18ba60;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    padding-top: 24px;
+    margin-bottom: 15px;
+}
+.partner-wrap.one i{
+    transform: rotate(-45deg);
+}
+.partner-wrap i{
+    display: block;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.partner-icon h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #3b3b3b;
+    margin: 10px 0 5px;
+}
+.partner-icon p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #3b3b3b;
+    margin: 0;
+    font-family: font1;
+}
+/* section-message部分.................. */
+.section-message{
+    padding: 100px 0;
+    background-color: #fff;
+}
+.section-heading{
+    margin-bottom: 70px;
+}
+.section-heading h2{
+    font-size: 35px;
+    font-weight: 300;
+    color: #3b3b3b;
+    line-height: 130%;
+    margin-bottom: 10px;
+    font-family: font1;
+    text-align: center;
+}
+.message-content{
+    margin-top: 70px;
+}
+.content-eight{
+    margin-left: 17%;
+}
+
+.message-form input,.message-form textarea{
+    color: #424040;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin-top: 30px;
+    padding: 12px 15px;
+    transition-duration: .3s;
+    outline: none;
+}
+.message-form input:focus,.message-form textarea:focus{
+    border-bottom: 1px solid #18ba60;
+}
+.send-message{
+    text-align: center;
+}
+.send-message .more{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 25px;
+    border: 2px solid #18ba60;
+    border-radius: 5px;
+    background-color: #18ba60;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 30px;
+}
+.more:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #337ab7;
+    border: 2px solid #337ab7;
+}

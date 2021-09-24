@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+.clearfix:before,
+	.clearfix:after {
+					    content: "";
+					    display: block;
+					    clear: both;
+					    visibility: hidden;
+					    line-height: 0;
+					    height: 0;
+					    font-size:0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+@font-face{
+    font-family: 'font1'; 
+    src: url(../images/fonts/xrxw3i6li01bkofansskzg.ttf);
+}
+
+.container{
+    width: 1170px;
+    margin:0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+ul,li{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+
+/* header部分............................. */
+/* header-top部分......................... */
+.header-top{
+    background: #3b526b;
+    border-bottom: 1px solid #eee;
+    min-height: 50px;
+}
+.header-top ul{
+    float: left;
+}
+.header-top li{
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 16px 16px 16px 0;
+}
+.header-top li i{
+    font-size: 15px;
+    color: #18ba60;
+    padding-right: 8px;
+}
+.header-top-right{
+    float:right;
+    top: 15px;
+    text-align: right;
+}
+.header-top-right a{
+    font-size: 15px;
+    font-weight: 500;
+    background: #18ba60;
+    color: #fff;
+    text-align: center;
+    padding: 17px 25px;
+    text-decoration:  none;
+}
+.header-top-right a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #314255;
+}
+
+/* header-bottom部分........................ */
+
+.header-bottom h1 a img{
+    vertical-align: middle;
+    margin-top: 25px;
+    height: 50px;
+    width: 164px;
+}
+
+.header-bottom-nav{
+    float: right;
+    margin-top: 12px;
+}
+.header-bottom .header-bottom-nav>li{
+    float: left;
+    padding: 25px 5px;
+    position: relative;
+    display: block;
+    margin-right: 30px;
+    
+}
+
+.header-bottom-nav li.active>a{
+    color:#18ba60 !important;
+}
+
+.header-bottom .header-bottom-nav li a{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #3b3b3b;
+    border-radius: 5px;
+    transition-duration: .3s;
+    text-decoration: none;
+}
+.header-bottom-nav>li>a:hover{
+    color: #18ba60;
+}
+.header-bottom-nav .dropdown .dropdown-menu{
+    width: 200px;
+    display: none;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    margin-left: 5px;
+    box-shadow: 0 5px 9px 0 rgb(50 50 50 / 15%);
+    position: absolute;
+    top: 68px;
+}
+.dropdown-menu li a{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    text-align: left;
+    color: #000;
+}
+.dropdown-menu>li>a:hover{
+    color: #fff;
+    background-color: #18ba60;
+}
+.header-bottom-nav>.dropdown>a i{
+    font-weight: 600;
+}
+
+
+/* footer部分........................... */
+.footer-top{
+    background-color: #222;
+    padding: 50px 0;
+}
+
+/* footer-top-one.................. */
+.one-content p{
+    color: #aaa !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 180%;
+}
+.lp{
+    margin-top: 25px;
+}
+.content-text{
+    margin-top: 20px;
+}
+.content-text p{
+    color: #fff !important;
+    margin-bottom: 10px;
+}
+.content-text p i{
+    font-weight: 100;
+    margin-right: 7px;
+}
+/* footer-top-two.................. */
+.two-recent h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.footer-second{
+    margin-left: 78px;
+}
+.footer-two{
+    margin-bottom: 20px;
+}
+.footer-two .two-img{
+    width: 25%;
+    float: left;
+}
+.footer-two .two-img img{
+    border-radius: 5px;
+    width: 100%;
+}
+.two-content{
+    width: 75%;
+    float: left;
+    text-align: left;
+}
+.two-content h6{
+    margin-left: 10px;
+}
+.two-content h6 a{
+    font-size: 15px;
+    font-weight: 400;
+    color: #aaa;
+    text-decoration: none;
+    line-height: 20px;
+}
+/* footer-top-three.................. */
+
+.footer-three ul{
+    margin-left: 20px;
+}
+.footer-three ul li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.footer-three ul li a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer-three ul li a:hover{
+    color: #18ba60;
+}
+
+/* footer-top-four.................. */
+.footer-four{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.footer-four input{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+
+}
+.input-group-btn{
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+.input-group-btn .btn{
+    position: relative;
+    z-index: 2;
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+.input-group-btn button{
+    color: #fff;
+    background-color: #18ba60;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 20px;
+    transition-duration: .3s;
+}
+
+/* footer-bottom部分...................... */
+.footer-bottom{
+    background-color: #1c1c1c;
+}
+.footer-bottom a i{
+    color: #fff;
+    font-size: 15px;
+    padding: 12px;
+    transition-duration: .3s;
+}
+.footer-bottom a i:hover{
+    color:#18ba60;
+}
+.footer-bottom-holder p{
+    color: #aaa;
+    padding: 12px;
+    text-align: right;
+}
